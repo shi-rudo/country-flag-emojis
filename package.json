@@ -18,6 +18,7 @@
   ],
   "author": "shirudo",
   "license": "MIT",
+  "repository": "https://github.com/shi-rudo/country-flag-emojis",
   "files": [
     "dist",
     "README.md",
