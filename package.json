@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/cjs/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "watch": "tsc --watch",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build": "npm run build:esm && npm run build:cjs"
+    "build": "npm run build:esm && npm run build:cjs",
+    "prepare": "npm run build"
   },
   "keywords": [
     "country",
@@ -19,7 +20,13 @@
   ],
   "author": "shirudo",
   "license": "MIT",
-  "repository": "https://github.com/shi-rudo/country-flag-emojis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shi-rudo/country-flag-emojis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shi-rudo/country-flag-emojis/issues"
+  },
   "files": [
     "dist",
     "README.md",
@@ -29,5 +36,8 @@
   "homepage": "https://github.com/shi-rudo/country-flag-emojis#readme",
   "devDependencies": {
     "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
