@@ -71,7 +71,7 @@ console.log(ES); // 🇪🇸
 The `lookup` methods will throw the following errors:
 
 - `InvalidInputError`: If the input is null, undefined, or an empty string.
-- `InvalidLengthError`: If the country code is not exactly 2 characters long.
+- `InvalidLengthError`: If the country code is either not exactly 2 or 3 characters long.
 - `CountryNotFoundError`: If the provided country code is not supported.
 
 ```typescript
