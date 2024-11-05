@@ -9,7 +9,7 @@ import {CountryNotFoundError, InvalidInputError, InvalidLengthError} from "../er
  * @returns The corresponding CountryFlag object.
  * @throws Will throw an error if the country code is invalid or not supported.
  */
-export function countryCodeToCountryFlag(
+export function countryCodeIsoAlpha2ToCountryFlag(
     countryCode: string
 ): CountryFlag {
     if (!countryCode) {

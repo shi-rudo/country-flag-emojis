@@ -7,14 +7,14 @@ import { CountryFlag } from "../types";
  * @type {CountryFlag}
  * @property {string} flag - The emoji representation of the New Caledonia flag.
  * @property {string} isoAlpha2 - The ISO 3166-1 alpha-2 code for New Caledonia.
+ * @property {string} isoAlpha3 - The ISO 3166-1 alpha-3 code for New Caledonia.
  * @property {string} unicode - The Unicode code points for the New Caledonia flag emoji.
  * @property {string} nameEnglish - The English name of the country.
  */
-const NC: CountryFlag = {
+export const NC: CountryFlag = {
   flag: "🇳🇨",
   isoAlpha2: "NC",
+  isoAlpha3: "NCL",
   unicode: "U+1F1F3,U+1F1E8",
-  nameEnglish: "New Caledonia",
+  nameEnglish: "New Caledonia"
 };
-
-export default NC;
