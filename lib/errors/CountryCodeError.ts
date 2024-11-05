@@ -18,7 +18,7 @@ export class InvalidInputError extends CountryCodeError {
 }
 
 export class InvalidLengthError extends CountryCodeError {
-    constructor(message: string = "Country code must be exactly 2 characters long.") {
+    constructor(message: string = "Country code must be either exactly 2 or 3 characters long.") {
         super("INVALID_LENGTH", message);
         this.name = "InvalidLengthError";
     }
