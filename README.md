@@ -1,6 +1,16 @@
-# Country Flag Emojis
+# Country Flag Emojis 🏳️
 
-A TypeScript library providing country flag emojis with metadata, optimized for tree-shaking and type safety.
+## Features
+
+🚩 Country flag emojis with metadata: Easily access flag emojis along with relevant metadata for each country, enhancing data clarity and presentation.
+
+✅ Type-safe: Ensure code reliability and improve development speed with TypeScript type safety, reducing runtime errors and offering autocompletion.
+
+🪶 Optimized for tree-shaking: Keep your bundle size minimal with tree-shaking, importing only what you need without unnecessary overhead.
+
+📦 No runtime dependencies: This library has no external runtime dependencies, ensuring a lightweight footprint and faster load times in any JavaScript or TypeScript project.
+
+🔗 Easy integration: Compatible with any JavaScript or TypeScript setup, allowing seamless adoption without complex configurations.
 
 ## Installation
 
