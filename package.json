@@ -1,9 +1,32 @@
 {
   "name": "country-flag-emojis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/cjs/index.d.ts",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./types": {
+      "import": "./dist/esm/lib/types.js",
+      "require": "./dist/cjs/lib/types.js"
+    },
+    "./lookup": {
+      "import": "./dist/esm/lib/lookup/lookup.js",
+      "require": "./dist/cjs/lib/lookup/lookup.js"
+    },
+    "./flags": {
+      "import": "./dist/esm/lib/flags/index.js",
+      "require": "./dist/cjs/lib/flags/index.js"
+    },
+    "./errors": {
+      "import": "./dist/esm/lib/errors/CountryCodeError.js",
+      "require": "./dist/cjs/lib/errors/CountryCodeError.js"
+    }
+  },
   "sideEffects": false,
   "scripts": {
     "watch": "tsc --watch",
