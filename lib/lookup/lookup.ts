@@ -1,4 +1,4 @@
-import {CountryFlag as ICountryFlag} from "../types";
+import type { CountryFlag } from "../types";
 import {countryCodeToFlag} from "./countryCodeToFlag";
 
 /**
@@ -12,7 +12,7 @@ const CountryFlag = {
      * @returns The corresponding CountryFlag object.
      * @throws Will throw an error if the country code is invalid, has an incorrect length, or is not supported.
      */
-    byCountryCode: (countryCode: string): ICountryFlag => {
+    byCountryCode: (countryCode: string): CountryFlag => {
         return countryCodeToFlag(countryCode);
     },
 
