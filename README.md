@@ -69,7 +69,7 @@ console.log('Japan Emoji (Alpha-3):', japanEmojiAlpha3);
 You can also import individual flags directly using named exports from the `flags/index.ts`. This method is less efficient but useful if you need to import multiple specific flags.
 
 ```typescript
-import { DE, JP, ES } from 'country-flag-emojis/lib/flags';
+import { DE, JP, ES } from "country-flag-emojis/flags";
 
 console.log(DE); // 🇩🇪
 console.log(JP); // 🇯🇵
