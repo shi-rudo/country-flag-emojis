@@ -25,10 +25,10 @@ npm install country-flag-emojis
 Leverage the `lookup` method to efficiently access country flag data using ISO alpha-2 codes. This approach ensures optimal bundle sizes through effective tree-shaking.
 
 ```typescript
-import { lookup } from 'country-flag-emojis';
+import CountryFlag from "country-flag-emojis";
 
 // Using ISO alpha-2 code
-const japanFlagAlpha2 = lookup.countryFlag.byCountryCode('JP');
+const japanFlagAlpha2 = CountryFlag.byCountryCode("JP");
 console.log('Japan Flag (Alpha-2):', japanFlagAlpha2);
 // Output:
 // Japan Flag (Alpha-2): {
@@ -40,7 +40,7 @@ console.log('Japan Flag (Alpha-2):', japanFlagAlpha2);
 // }
 
 // Using ISO alpha-3 code
-const japanFlagAlpha3 = lookup.countryFlag.byCountryCode('JPN');
+const japanFlagAlpha3 = CountryFlag.byCountryCode('JPN');
 console.log('Japan Flag (Alpha-3):', japanFlagAlpha3);
 // Output:
 // Japan Flag (Alpha-3): {
@@ -52,13 +52,13 @@ console.log('Japan Flag (Alpha-3):', japanFlagAlpha3);
 // }
 
 // Retrieving just the emoji flag using ISO alpha-2 code
-const japanEmojiAlpha2 = lookup.countryFlag.emojiByCountryCode('JP');
+const japanEmojiAlpha2 = CountryFlag.emojiByCountryCode('JP');
 console.log('Japan Emoji (Alpha-2):', japanEmojiAlpha2);
 // Output:
 // Japan Emoji (Alpha-2): 🇯🇵
 
 // Retrieving just the emoji flag using ISO alpha-3 code
-const japanEmojiAlpha3 = lookup.countryFlag.emojiByCountryCode('JPN');
+const japanEmojiAlpha3 = CountryFlag.emojiByCountryCode('JPN');
 console.log('Japan Emoji (Alpha-3):', japanEmojiAlpha3);
 // Output:
 // Japan Emoji (Alpha-3): 🇯🇵
@@ -85,11 +85,11 @@ The `lookup` methods will throw the following errors:
 - `CountryNotFoundError`: If the provided country code is not supported.
 
 ```typescript
-import { lookup } from 'country-flag-emojis';
+import CountryFlag from "country-flag-emojis";
 import { CountryNotFoundError } from 'country-flag-emojis';
 
 try {
-  const flag = lookup.countryFlag.countryCodeToFlag('XYZ');
+  const flag = CountryFlag.byCountryCode('XYZ');
 } catch (error) {
   if (error instanceof CountryNotFoundError) {
     console.error(`Country code not found: ${error.message}`);
