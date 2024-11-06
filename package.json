@@ -45,7 +45,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shi-rudo/country-flag-emojis.git"
+    "url": "git+https://github.com/shi-rudo/country-flag-emojis.git"
   },
   "bugs": {
     "url": "https://github.com/shi-rudo/country-flag-emojis/issues"
