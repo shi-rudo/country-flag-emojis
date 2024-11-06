@@ -20,9 +20,9 @@ npm install country-flag-emojis
 
 ## Usage
 
-### Recommended: Use the `lookup` Method with the Mapping
+### Recommended: Use the CountryFlag Object for Lookup
 
-Leverage the `lookup` method to efficiently access country flag data using ISO alpha-2 codes. This approach ensures optimal bundle sizes through effective tree-shaking.
+Leverage the `CountryFlag` object to efficiently access country flag data using ISO alpha-2 or alpha-3 codes.
 
 ```typescript
 import CountryFlag from "country-flag-emojis";
@@ -78,7 +78,7 @@ console.log(ES); // 🇪🇸
 
 ## Error Handling
 
-The `lookup` methods will throw the following errors:
+The `CountryFlag` object methods will throw the following errors:
 
 - `InvalidInputError`: If the input is null, undefined, or an empty string.
 - `InvalidLengthError`: If the country code is either not exactly 2 or 3 characters long.
